@@ -3,15 +3,16 @@ function toggle() {
     var element = document.getElementById("navigation");
     element.classList.toggle("burger");
 }
+function escape() {
+    var element = document.getElementById("nav");
+    element.classList.toggle("escape");
+}
 function l1(){
     var element = document.getElementById("l1");
     element.classList.toggle("h1");
 }
 
-function dark() {
-    var element = document.getElementById("light");
-    element.classList.toggle("darkImage");
-}
+
 
 
 const observer = new IntersectionObserver(entries => {
