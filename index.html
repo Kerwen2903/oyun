@@ -6,15 +6,11 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <style>
-        body{
-            background: black !important;
-            transition: all ease 1000ms !important;
-        }
         .wf-force-outline-none[tabindex="-1"]:focus {
             outline: none;
         }
 
-        .burger{
+        .burger {
             display: flex;
             justify-content: space-between;
             margin: auto;
@@ -26,27 +22,36 @@
             transition: all ease 1000ms;
             height: auto;
         }
+
         @media only screen and (max-width:480px) {
-            .burger{
+            .burger {
                 top: 80px;
             }
-            .h1{
+
+            .h1 {
                 margin-top: 100px;
             }
-            .w-nav-link{
+
+            .w-nav-link {
                 height: 61px;
             }
-            
+
         }
+
         @media only screen and (max-width:340px) {
-            .burger{
+            .burger {
                 top: 80px;
                 display: flex;
-  flex-direction: column;
+                flex-direction: column;
             }
-            .h1{
+
+            .h1 {
                 margin-top: 200px;
             }
+        }
+
+        html {
+            scroll-behavior: smooth;
         }
     </style>
     <title>New maksat mollums game</title>
@@ -60,6 +65,7 @@
     <meta
         content="https://uploads-ssl.webflow.com/6293ac11d34eaea6025d2391/637df306a321ead5796d6bed_sunset-grumbies.jpg"
         property="og:image">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta content="Grumbies - A Crumb of Mythical Comfort" property="twitter:title">
     <meta
         content="Grumbies is a game and NFT social experiment brought to you by Metaseed Labs, where users can win Ethereum!"
@@ -72,6 +78,7 @@
     <meta content="width=device-width, initial-scale=1" name="viewport">
     <link href="./Grumbies - A Crumb of Mythical Comfort_files/grumbies-nft.webflow.c3b905eb9.min.css" rel="stylesheet"
         type="text/css">
+    <link rel="stylesheet" href="animation.css">
     <script
         type="text/javascript">!function (o, c) { var n = c.documentElement, t = " w-mod-"; n.className += t + "js", ("ontouchstart" in o || o.DocumentTouch && c instanceof DocumentTouch) && (n.className += t + "touch") }(window, document);</script>
     <!-- <link href="https://uploads-ssl.webflow.com/6293ac11d34eaea6025d2391/637df16b5bd82a97ac57072a_heart-icon32.png"--------------- oz logany goy -->
@@ -87,96 +94,166 @@
         }
     </style>
 
-    <!-- Google tag (gtag.js) -->
+
 
 
 </head>
 
 <body>
     <div data-animation="default" data-collapse="medium" data-duration="400" data-easing="ease" data-easing2="ease"
-        role="banner" class="navbar w-nav">
+        role="banner" class="navbar w-nav" >
         <div class="nav-container w-container"><a href="https://www.grumbies.io/#" class="brand w-nav-brand"><img
                     src="./Grumbies - A Crumb of Mythical Comfort_files/637de59df3ef83caa5c7c3c4_grumbies-website-logo.png"
-                    loading="lazy" width="200" sizes="(max-width: 479px) 100vw, 200.00001525878906px"
-                    
-                    alt=""></a>
-            <nav  class="nav-menu w-nav-menu"><a href="#top" class="nav-link w-nav-link"
+                    loading="lazy" width="200" sizes="(max-width: 479px) 100vw, 200.00001525878906px" alt=""></a>
+            <nav class="nav-menu w-nav-menu"><a href="#top" class="nav-link w-nav-link"
                     style="max-width: 1128px;">Game</a><a href="#about-game" class="nav-link w-nav-link"
                     style="max-width: 1128px;">About&nbsp;game<br></a><a href="#team" class="nav-link w-nav-link"
                     style="max-width: 1128px;">Team</a></nav>
 
-                   
 
- <!-- -----------------hamburger area ---------------------------- -->
-            <div  class="menu-button w-nav-button" onclick="toggle(), l1()" style="-webkit-user-select: text;" aria-label="menu" role="button"
-                tabindex="0" aria-controls="w-nav-overlay-0" aria-haspopup="menu" aria-expanded="false">
-               
+
+            <!-- -----------------hamburger area ---------------------------- -->
+            <div class="menu-button w-nav-button" onclick="toggle(), l1()" style="-webkit-user-select: text;"
+                aria-label="menu" role="button" tabindex="0" aria-controls="w-nav-overlay-0" aria-haspopup="menu"
+                aria-expanded="false">
+
                 <div class="icon w-icon-nav-menu"></div>
             </div>
         </div>
-        
+
         <!-- -------------------------------------------- -->
         <div class="w-nav-overlay" data-wf-ignore="" id="w-nav-overlay-0"></div>
-        
-        
+
+
     </div>
-     <!-- ----------------------------------------------sadadsad -->
-     <nav id="navigation" ><a href="#top" class="nav-link w-nav-link"
-        style="max-width: 1128px;">Game</a><a href="#about-game" class="nav-link w-nav-link"
-        style="max-width: 1128px;">About&nbsp;game<br></a><a href="#team" class="nav-link w-nav-link"
-        style="max-width: 1128px;">Team</a></nav>
-        <!-- sadasdasd-------------------------dasdasda -->
-    
-    <div data-w-id="f2ad3c88-b91f-cbbf-fbd4-dd2b5f7f9436" class="hero-section wf-section">
-        <div  class="hero-content container w-container">
+    <!-- ----------------------------------------------sadadsad -->
+    <nav id="navigation"><a href="#top" class="nav-link w-nav-link" style="max-width: 1128px;">Game</a><a
+            href="#about-game" class="nav-link w-nav-link" style="max-width: 1128px;">About&nbsp;game<br></a><a
+            href="#team" class="nav-link w-nav-link" style="max-width: 1128px;">Team</a></nav>
+    <!-- sadasdasd-------------------------dasdasda -->
+
+    <div data-w-id="f2ad3c88-b91f-cbbf-fbd4-dd2b5f7f9436" class="hero-section wf-section" id="top">
+        <div class="hero-content container w-container">
 
             <div data-w-id="80a99244-1e44-05e6-034e-ff403eff8d2c"
                 style="opacity: 1; transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;"
                 class="hero-div">
                 <div class="heading-div">
-                    <div class="div-block-7" id="top">
-                        <img
-                            src="./Grumbies - A Crumb of Mythical Comfort_files/637f3b782e654f71fd6e6967_sparkle-white.png"
+                    <div class="div-block-7" >
+                        <img src="./Grumbies - A Crumb of Mythical Comfort_files/637f3b782e654f71fd6e6967_sparkle-white.png"
                             loading="lazy" width="85"
                             sizes="(max-width: 479px) 100vw, (max-width: 767px) 53.99305725097656px, (max-width: 991px) 9vw, 85.00000762939453px"
                             srcset="https://uploads-ssl.webflow.com/6293ac11d34eaea6025d2391/637f3b782e654f71fd6e6967_sparkle-white-p-500.png 500w, https://uploads-ssl.webflow.com/6293ac11d34eaea6025d2391/637f3b782e654f71fd6e6967_sparkle-white.png 600w"
-                            alt="" class="image-6"></div>
-                    <div id="l1" class="heading l1">
-                        <h1 class="heading-2">A Crumb of </h1>
+                            alt="" class="image-6">
+                    </div>
+
+                </div>
+                <div id="l1 " class="text" style="height: 15vw;">
+                    <h1 class="heading-2 ">A Crumb of </h1>
+
+                    <h1 class="heading-3">Mythical Comfort.</h1>
+                </div>
+                <div style="margin-bottom: 12vw; min-width: 100%;" class="hero-div-2 square">
+                    <div class="hero-div-text" style="width: 100%">
+                        <div class="text-block-1" style="min-width: 100%;">The game takes place in a vast and magical world filled with wonders and mythical creatures. The protagonist, a young and adventurous monster, is head over heels in love with another monster from a different clan. However, their families strongly disapprove of their relationship due to the ancient rivalry between their clans.
+                            Determined to prove their love and worth, the protagonist sets out on a perilous journey to undertake various challenges and quests that will test their physical and mental strength. Along the way, they will encounter a wide array of monsters, some friendly, and some hostile, who will either help or hinder their progress.
+                            The challenges the protagonist faces will be varied and diverse, ranging from puzzles and riddles to combat and exploration. They may have to solve mysteries in forgotten tombs, navigate treacherous landscapes, or even engage in epic battles against powerful foes.
+                            As the protagonist overcomes each challenge, they gain the respect of the monsters they encounter, and their legend grows. They also collect valuable items and weapons that will help them on their journey and enable them to face even greater challenges.
+                            Ultimately, the protagonist's goal is to win the hearts of their respective families by demonstrating their bravery, skill, and unwavering love for their partner. But can they overcome the obstacles and challenges that lie ahead and prove that love knows no boundaries? Only time will tell.
+                            
+                        </div>
+                    </div>
+                    <div id="about-game"></div>
+                </div>
+
+
+
+
+
+            </div>
+            <ul style="margin-top: 100px; color: rgb(255, 255, 255); list-style: none;"  >
+                <li  style=" margin-bottom: 50px;" class="modul1">
+                    <div style="display: flex;" class="img-steps">
+                    <div style="margin-right: 20px; flex: 1;"><img style="border-radius: 20px; width:1200px;"  src="images/step 1.png" alt="">
+                    </div>
+                    <div style="flex: 2;">
+                        <div style="font-size: 50px;">Step 1: The Forest of Trials</div>
+                        <div>The Forest of Trials is a dense and treacherous woodland that stretches for miles, shrouded in an eerie mist that adds to its ominous aura. The trees are old and gnarled, their branches twisted into grotesque shapes that seem to reach out to snag unwary travelers. As the monster ventures deeper into the forest, they must use their agility and quick reflexes to navigate the many obstacles that lie in their path. They may encounter wide chasms that must be leaped across, narrow ledges that require delicate balance, and sharp thorns that tear at their flesh.In addition to the natural hazards of the forest, the monster must also contend with various monsters that lurk in the shadows, waiting to pounce on unsuspecting prey. These creatures are fierce and cunning, and they will use every trick in their arsenal to defeat the monster.
+                            As the monster makes their way through the forest, they begin to feel the weight of exhaustion and doubt creeping up on them. But just as they are about to give up, they come across a wise old monster who offers them words of encouragement and a clue to the next challenge.
+                            The old monster imparts to the protagonist a riddle that they must solve to continue on their journey. The riddle requires the monster to use their wits and think outside the box, and the answer will unlock the path to the next challenge.
+                            With renewed determination, the monster sets out to solve the riddle and complete their journey through the Forest of Trials. They know that the challenges ahead will only grow more difficult, but they are prepared to face whatever lies ahead, fueled by their love and desire to prove their worth.</div>
                     </div>
                 </div>
-                <h1 class="heading-3">Mythical Comfort.</h1>
-            </div>
-          
-
-            <div data-w-id="3b4cdaf3-1d89-6257-146f-684a34068ca1"
-                style="opacity: 1; transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;"
-                class="hero-div-2">
-                <div class="hero-div-text">
-                    <div class="text-block-1">Grumbies is an NFT interactive ecosystem brought to you by Metaseed Labs,
-                        where users
-                        can win Ethereum. Our first launch will include the Eternal Entry and Genesis Battle. This
-                        launch is an official partnership OpenSea!</div>
-                </div>
-
                 
-            </div>
-            <ul style="margin-top: 100px; color: rgb(255, 255, 255); list-style: none;">
-                <li id="about-game" style="display: flex; margin-bottom: 50px;">
-                    <div style="margin-right: 20px;"><img style="border-radius: 20px; " src="images/phot-1.jpg" alt=""></div><div> <div style="font-size: 50px;">Title</div> <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, omnis cupiditate. Ab harum, quos rem reiciendis commodi consectetur minima, recusandae amet et aspernatur culpa dolorum, placeat assumenda sapiente tenetur cumque?</div></div>
                 </li>
-                <li style="display: flex; flex-direction: row-reverse; margin-bottom: 50px;">
-                    <div style="margin-left: 20px;"><img style="border-radius: 20px; " src="images/phot-1.jpg" alt=""></div><div> <div style="font-size: 50px;">Title</div> <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, omnis cupiditate. Ab harum, quos rem reiciendis commodi consectetur minima, recusandae amet et aspernatur culpa dolorum, placeat assumenda sapiente tenetur cumque?</div></div>
+                <li style="  margin-bottom: 50px;" class="modul2">
+                    <div style="display: flex; flex-direction: row-reverse;" class="img-steps">
+                        <div style="margin-left: 20px; flex: 1;"><img style="border-radius: 20px; width:1200px;"  src="images/step 2.png" alt="">
+                        </div>
+                        <div style="flex: 2;">
+                            <div style="font-size: 50px;">Step 2: The Cavern of Darkness</div>
+                            The Cavern of Darkness is a labyrinthine network of twisting tunnels and treacherous crevices that stretches deep underground. The air is thick with the scent of damp earth and stale air, and the darkness is so absolute that even the monster's keen eyesight is of little use.The monster must proceed with caution, using their sharp senses and intuition to navigate the cave's perilous paths. The floor is uneven and littered with jagged rocks and obstacles that could trip them up, and the walls are slick with moisture, making them difficult to climb.
+                            The monster must also be on guard against the dangerous creatures that inhabit the cavern, such as giant bats, venomous spiders, and feral beasts that prowl in the shadows. These monsters are vicious and aggressive, and the monster must use their skills and weapons to fend them off.
+                            As the monster progresses deeper into the cavern, they encounter a series of puzzles and traps that require them to think outside the box and use their intelligence to solve. These may include riddles that must be deciphered, levers that must be pulled in the correct sequence, and pressure plates that must be triggered in the right order.
+                            At the end of the cavern, the monster comes across a mysterious crystal that seems to pulse with a strange energy. As they approach, the crystal emits a brilliant light that illuminates the entire cavern, revealing a hidden path that leads to the next challenge.
+                            The crystal contains the key to the next challenge, and the monster must use their knowledge and skills to unlock its secrets. With the crystal in hand, the monster emerges from the cavern of darkness, triumphant and eager to face whatever challenges lie ahead.
+                    </div>
+                    
+                    
+                    
+
                 </li>
-                <li style="display: flex; margin-bottom: 50px;">
-                    <div style="margin-right: 20px;"><img style="border-radius: 20px; " src="images/phot-1.jpg" alt=""></div><div> <div style="font-size: 50px;">Title</div> <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, omnis cupiditate. Ab harum, quos rem reiciendis commodi consectetur minima, recusandae amet et aspernatur culpa dolorum, placeat assumenda sapiente tenetur cumque?</div></div>
+                <li  style=" margin-bottom: 50px;" class="modul1">
+                    <div style="display: flex;" class="img-steps">
+                    <div style="margin-right: 20px; flex: 1;"><img style="border-radius: 20px; width:1200px;"  src="images/Step 3..png" alt="">
+                    </div>
+                    <div style="flex: 2;">
+                        <div style="font-size: 50px;">Step 3: The Tower of Trials</div>
+                        <div>The Tower of Trials looms before the monster, its spires reaching towards the heavens. The tower is an ancient structure, and its walls are lined with intricate carvings and mysterious symbols that hint at its secrets.As the monster approaches the tower, they notice that the entrance is heavily guarded by powerful creatures, each one more ferocious than the last. To gain entry, the monster must defeat them in combat, using their skills and weapons to emerge victorious.
+                            Once inside, the monster begins their ascent up the tower, which is filled with deadly traps and obstacles that must be navigated with precision and skill. The tower's interior is dark and foreboding, and the monster can hear the sound of their footsteps echoing through the halls.
+                            As they climb higher, the challenges become more difficult, with tougher enemies, more intricate traps, and trickier puzzles that must be solved to proceed. The monster must use their agility and combat prowess to overcome these obstacles, dodging falling boulders, leaping over spiked pits, and taking on powerful foes.
+                            With each level they ascend, the monster gains new insights and abilities, honing their skills and sharpening their senses. They must remain focused and determined, knowing that their love and the approval of their families depend on their success.
+                            As the monster nears the top of the tower, they encounter the final challenge, a powerful monster that guards the entrance to the tower's summit. This creature is the most formidable opponent the monster has faced so far, and they must use every trick in their arsenal to defeat it.
+                            Finally, the monster emerges onto the roof of the tower, where they find a stunning view of the world below. They also discover a mysterious object that holds the key to their ultimate goal. With this object in hand, the monster sets out to return to their village, eager to prove their worth and gain the acceptance of their families.</div>
+                    </div>
+                </div>
+                
+                
                 </li>
-                <li style="display: flex; flex-direction: row-reverse; margin-bottom: 50px;">
-                    <div style="margin-left: 20px; "><img style="border-radius: 20px; " src="images/phot-1.jpg" alt=""></div><div> <div style="font-size: 50px;">Title</div> <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, omnis cupiditate. Ab harum, quos rem reiciendis commodi consectetur minima, recusandae amet et aspernatur culpa dolorum, placeat assumenda sapiente tenetur cumque?</div></div>
+                <li style="   margin-bottom: 50px;" class="modul2">
+                    <div style="display: flex; flex-direction: row-reverse;" class="img-steps">
+                        <div style="margin-left: 20px; flex: 1;"><img style="border-radius: 20px; width:1200px;"  src="images/step 1.png" alt="">
+                        </div>
+                        <div style="flex: 2;">
+                            <div style="font-size: 50px;">Step 4: The Trial of Love</div>
+                            <div>The Trial of Love is the final and most difficult challenge the monster must face. It is a test of their courage, devotion, and willingness to sacrifice everything for the one they love.The challenge takes place in a magical garden, surrounded by beautiful flowers and lush greenery. The monster's partner is waiting for them in the center of the garden, but they are trapped inside a crystal cage. The monster must find a way to break the cage and free their partner before time runs out.
+                                To do this, the monster must make a series of difficult choices that will test their devotion and bravery. They may encounter obstacles such as dangerous creatures or treacherous terrain, and they must use their skills and instincts to overcome them.
+                                As the monster progresses through the garden, they will face a series of challenges that will test their love and commitment. These may include puzzles that require them to solve riddles or manipulate objects, battles against powerful monsters that test their combat skills, and difficult moral dilemmas that force them to choose between their own desires and the needs of their partner.
+                                As the monster progresses through the trials, they will gain new insights into themselves and their partner. They will learn to be selfless, brave, and true to their heart, and they will come to understand the true meaning of love.
+                                Finally, the monster reaches the center of the garden, where their partner awaits. The crystal cage is unbreakable, but the monster realizes that they hold the key to their partner's release within themselves. They must summon all of their courage and love to break the cage, using a powerful burst of energy that emanates from their heart.
+                                With the cage shattered, the monster is reunited with their partner, and they embrace in a tender and passionate kiss. The monster has proven their love, both to their partner and to their families, and they are accepted as true equals among their kind. They know that they have truly found peace and harmony in the mythical world of monsters, where love and acceptance reign supreme.</div>
+                        </div>
+                    </div>
+                    
+
+                </li><li  style=" margin-bottom: 50px;" class="modul1">
+                    <div style="display: flex;" class="img-steps">
+                    <div style="margin-right: 20px; flex: 1;"><img style="border-radius: 20px; width:1200px;"  src="images/step 2.png" alt="">
+                    </div>
+                    <div style="flex: 2;">
+                        <div style="font-size: 50px;">Conclusion:</div>
+                        <div>Even if the monster fails to complete all of the challenges and win the approval of their families, they will have still gained valuable experience and learned important life lessons. Throughout their journey, the monster has faced many challenges and obstacles. They have had to use their skills, wits, and courage to overcome each of these obstacles, and in doing so, they have learned valuable lessons about themselves and the world around them.
+                            For example, during the Forest of Trials challenge, the monster learned to be agile, quick-witted, and determined. They faced many obstacles and overcame them through perseverance and creativity. They also learned the importance of asking for help when needed, as the wise old monster gave them valuable advice that helped them succeed.
+                            During the Cavern of Darkness challenge, the monster learned to trust their instincts and think critically to solve complex puzzles. They also faced their fears of the dark and of being alone, learning that they are stronger than they thought and can overcome any obstacle through determination and bravery.
+                            During the Tower of Trials challenge, the monster faced their greatest physical and mental challenges yet. They learned to be patient, strategic, and courageous in the face of danger, and they also learned the importance of teamwork and trust as they worked together with their partner to overcome the challenges.
+                            Even if the monster fails to complete the final Trial of Love challenge, they will have learned important lessons about love, sacrifice, and devotion. They will have discovered the depth of their feelings for their partner, and they will know that they are willing to do anything to prove their love.
+                            In the end, the monster's journey is not just about winning the approval of their families or being reunited with their love. It is about personal growth, learning valuable life lessons, and discovering the true meaning of love and acceptance. Whether they succeed or fail, the monster will emerge from their journey stronger, wiser, and more compassionate than ever before.
+                            </div>
+                    </div>
+                </div>
+                
                 </li>
-                <li style="display: flex;">
-                    <div style="margin-right: 20px;"><img style="border-radius: 20px; " src="images/phot-1.jpg" alt=""></div><div> <div style="font-size: 50px;">Title</div> <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, omnis cupiditate. Ab harum, quos rem reiciendis commodi consectetur minima, recusandae amet et aspernatur culpa dolorum, placeat assumenda sapiente tenetur cumque?</div></div>
-                </li>
+                
             </ul>
 
         </div>
@@ -189,14 +266,15 @@
                     loading="lazy" alt="">
             </div>
         </div>
+        <div id="team"></div>
     </div>
-<!-- -----------------------------------------------blocklan duryan yeri------------------------------------- -->
+    <!-- -----------------------------------------------blocklan duryan yeri------------------------------------- -->
 
 
 
     <!-- -------------------------------komandan yeri ---------------------------------------------- -->
 
-    <div id="team" class="our-team-section wf-section" style="margin-top: 150px;">
+    <div  class="our-team-section wf-section" style="margin-top: 150px;">
         <div class="container w-container">
             <div data-w-id="7cd71721-0ffe-9c56-0ad9-f9d0150686f8"
                 style="opacity: 1; transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;"
@@ -208,9 +286,8 @@
                     data-w-id="7e3e7352-1e73-e75b-cbdd-4bd9f48601b0"
                     style="opacity: 1; transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;"
                     class="member-1"><img
-                        src="./Grumbies - A Crumb of Mythical Comfort_files/637dd375f2488c604061a847_sayeed-grumbie.jpeg"
+                        src=".//images/Team (1).png"
                         loading="lazy" width="250" height="250"
-                        srcset="https://uploads-ssl.webflow.com/6293ac11d34eaea6025d2391/637dd375f2488c604061a847_sayeed-grumbie-p-500.jpeg 500w, https://uploads-ssl.webflow.com/6293ac11d34eaea6025d2391/637dd375f2488c604061a847_sayeed-grumbie-p-800.jpeg 800w, https://uploads-ssl.webflow.com/6293ac11d34eaea6025d2391/637dd375f2488c604061a847_sayeed-grumbie-p-1080.jpeg 1080w, https://uploads-ssl.webflow.com/6293ac11d34eaea6025d2391/637dd375f2488c604061a847_sayeed-grumbie-p-1600.jpeg 1600w, https://uploads-ssl.webflow.com/6293ac11d34eaea6025d2391/637dd375f2488c604061a847_sayeed-grumbie-p-2000.jpeg 2000w, https://uploads-ssl.webflow.com/6293ac11d34eaea6025d2391/637dd375f2488c604061a847_sayeed-grumbie-p-2600.jpeg 2600w, https://uploads-ssl.webflow.com/6293ac11d34eaea6025d2391/637dd375f2488c604061a847_sayeed-grumbie.jpeg 3000w"
                         sizes="(max-width: 479px) 100vw, (max-width: 767px) 44vw, 250.00001525878906px" alt=""
                         class="image-14">
                     <div class="name">AtownBrown</div>
@@ -224,9 +301,8 @@
                     data-w-id="1e3d8c06-4735-b215-f88a-5c7875fa274b"
                     style="opacity: 1; transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;"
                     class="member-2"><img
-                        src="./Grumbies - A Crumb of Mythical Comfort_files/637dd4be345b29dfc52c4c61_evan-grumbie.jpeg"
+                        src="./images/Team (2).png"
                         loading="lazy" width="250" height="250"
-                        srcset="https://uploads-ssl.webflow.com/6293ac11d34eaea6025d2391/637dd4be345b29dfc52c4c61_evan-grumbie-p-500.jpeg 500w, https://uploads-ssl.webflow.com/6293ac11d34eaea6025d2391/637dd4be345b29dfc52c4c61_evan-grumbie-p-800.jpeg 800w, https://uploads-ssl.webflow.com/6293ac11d34eaea6025d2391/637dd4be345b29dfc52c4c61_evan-grumbie-p-1080.jpeg 1080w, https://uploads-ssl.webflow.com/6293ac11d34eaea6025d2391/637dd4be345b29dfc52c4c61_evan-grumbie-p-1600.jpeg 1600w, https://uploads-ssl.webflow.com/6293ac11d34eaea6025d2391/637dd4be345b29dfc52c4c61_evan-grumbie-p-2000.jpeg 2000w, https://uploads-ssl.webflow.com/6293ac11d34eaea6025d2391/637dd4be345b29dfc52c4c61_evan-grumbie.jpeg 2000w"
                         sizes="(max-width: 479px) 100vw, (max-width: 767px) 44vw, 250.00001525878906px" alt=""
                         class="image-12">
                     <div class="name">Autopixel</div>
@@ -240,9 +316,8 @@
                     data-w-id="7bc3d515-32b9-79a8-45e4-e081fb84a0ff"
                     style="opacity: 1; transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;"
                     class="member-3"><img
-                        src="./Grumbies - A Crumb of Mythical Comfort_files/637dd374fd493940b1732446_lexie-grumbie.png"
+                        src="./images/Team (3).png"
                         loading="lazy" width="255" height="255"
-                        srcset="https://uploads-ssl.webflow.com/6293ac11d34eaea6025d2391/637dd374fd493940b1732446_lexie-grumbie-p-500.png 500w, https://uploads-ssl.webflow.com/6293ac11d34eaea6025d2391/637dd374fd493940b1732446_lexie-grumbie.png 608w"
                         sizes="(max-width: 479px) 100vw, (max-width: 767px) 44vw, 255.00001525878906px" alt=""
                         class="image-13">
                     <div class="name">Psychedelicious Lex</div>
@@ -264,22 +339,17 @@
     <div class="footer wf-section">
         <div class="container w-container">
             <div>
-                <div class="text-block-18">© 2023 — Metaseed Labs, LLC</div>
+                <div class="text-block-18">© 2023 — Metamars Labs</div>
             </div>
         </div>
     </div>
 
 
-    <script>
+    <script src="animation.js">
 
-        function toggle() {
-            var element = document.getElementById("navigation");
-            element.classList.toggle("burger");
-        }
-        function l1(){
-            var element = document.getElementById("l1");
-            element.classList.toggle("h1");
-        }
+
+
+
     </script>
 
 </body>

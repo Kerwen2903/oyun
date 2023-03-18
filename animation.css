@@ -1,0 +1,131 @@
+
+@media only screen and (max-width:1100px) {
+    .img-steps{
+        display: block !important;
+        flex-direction: row !important;
+    }
+    
+}
+
+
+@keyframes wipe-enter {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 0.5;
+    }
+}
+
+
+    .square-animation {
+      animation: wipe-enter 2s;
+    }
+  
+
+@keyframes text-enter {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        display: 1;
+    }
+}
+
+    .text-animation {
+        animation-name: text-enter;
+        animation-duration: 6s;
+    }
+
+/* -----------------1---------------------- */
+
+@keyframes modul1-enter {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        display: 1;
+    }
+}
+
+    .modul1-animation {
+        animation-name: modul1-enter;
+        animation-duration: 6s;
+    }
+
+
+/* --------------2--------------- */
+
+@keyframes modul2-enter {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        display: 1;
+    }
+}
+
+
+    .modul2-animation {
+        animation-name: modul2-enter;
+        animation-duration: 6s;
+    }
+
+/* ---------------3---------------- */
+@keyframes modul3-enter {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        display: 1;
+    }
+}
+
+    .modul3-animation {
+        animation-name: modul3-enter;
+        animation-duration: 6s;
+    }
+
+
+/* -----------------4------------------- */
+
+@keyframes modul4-enter {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        display: 1;
+    }
+}
+
+    .modul4-animation {
+        animation-name: modul4-enter;
+        animation-duration: 6s;
+    }
+
+/* -----------------5------------------- */
+
+@keyframes modul5-enter {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        display: 1;
+    }
+}
+
+    .modul5-animation {
+        animation-name: modul5-enter;
+        animation-duration: 6s;
+    }
+
+
+
+
