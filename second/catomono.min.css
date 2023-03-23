@@ -2273,7 +2273,6 @@ body {
 
 .hero-section {
   padding-top: 0;
-  background-image: url("https://uploads-ssl.webflow.com/6293ac11d34eaea6025d2391/6293ac11d34eae50a25d23ba_Rainbow.png");
   background-position: 50% 50%;
   background-size: cover;
   background-repeat: no-repeat
@@ -3806,74 +3805,3 @@ body {
   grid-row-end: span 1
 }
 
-@font-face {
-  font-family: 'Urbanist';
-  src: url('https://uploads-ssl.webflow.com/6293ac11d34eaea6025d2391/6293ac11d34eaed8815d239d_Urbanist-Regular.ttf') format('truetype');
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Urbanist';
-  src: url('https://uploads-ssl.webflow.com/6293ac11d34eaea6025d2391/6293ac11d34eae2aa95d23a6_Urbanist-Medium.ttf') format('truetype');
-  font-weight: 500;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Urbanist';
-  src: url('https://uploads-ssl.webflow.com/6293ac11d34eaea6025d2391/6293ac11d34eaeccfd5d23a2_Urbanist-Light.ttf') format('truetype');
-  font-weight: 300;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Urbanist';
-  src: url('https://uploads-ssl.webflow.com/6293ac11d34eaea6025d2391/6293ac11d34eae37f05d23a1_Urbanist-Bold.ttf') format('truetype');
-  font-weight: 700;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Urbanist';
-  src: url('https://uploads-ssl.webflow.com/6293ac11d34eaea6025d2391/6293ac11d34eae76345d23a3_Urbanist-Thin.ttf') format('truetype');
-  font-weight: 600;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Inter';
-  src: url('https://uploads-ssl.webflow.com/6293ac11d34eaea6025d2391/6293ac11d34eae82935d23aa_Inter-Regular.ttf') format('truetype');
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Inter';
-  src: url('https://uploads-ssl.webflow.com/6293ac11d34eaea6025d2391/6293ac11d34eae2f575d23b6_Inter-Medium.ttf') format('truetype');
-  font-weight: 500;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Inter';
-  src: url('https://uploads-ssl.webflow.com/6293ac11d34eaea6025d2391/6293ac11d34eae38e85d23ad_Inter-Bold.ttf') format('truetype');
-  font-weight: 700;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Luminari';
-  src: url('https://uploads-ssl.webflow.com/6293ac11d34eaea6025d2391/6293ac11d34eaee45c5d23ab_Luminari-Regular.ttf') format('truetype');
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
